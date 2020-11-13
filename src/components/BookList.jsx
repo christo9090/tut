@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Book from './Book';
-
+import bookData from './../data/data';
 
 const BookList = () => {
     return ( 
         <section className="booklist">
-            <Book />
+            {bookData.map( book => { 
+                return <Book
+                    key={book.id}
+                    {...book}
+                /> } )
+            }
         </section>
     );
 }
