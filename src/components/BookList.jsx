@@ -4,8 +4,15 @@ import Book from './Book';
 
 const BookList = () => {
     return ( 
-        <section>
+        <section className="booklist">
             <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            <Book />
+            
         </section>
     );
 }
